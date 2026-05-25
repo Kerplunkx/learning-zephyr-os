@@ -1,0 +1,13 @@
+/ {
+	buttons {
+		compatible = "gpio-keys";
+		button_a: button0 {
+			gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>;
+			zephyr,code = <INPUT_KEY_0>;
+		};
+		button_b: button1 {
+			gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+			zephyr,code = <INPUT_KEY_1>;
+		};
+	};
+};
